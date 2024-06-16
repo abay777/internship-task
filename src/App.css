@@ -1,0 +1,160 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  --primary-color:#c5b9ab;
+}
+
+
+.linen .linendrop,
+.tableware .tablewaredrop,
+.decor .decordrop,
+.vases .vasesdrop,
+.leather .leatherdrop,
+.candleware .candlewaredrop,
+.lighting .lightingdrop,
+.furniture .furnituredrop,
+.gifts .giftsdrop,
+.inspiration .inspirationdrop
+{
+  display: none;
+  transition: all .5 s;
+}
+
+.linen:hover .linendrop,
+.tableware:hover .tablewaredrop,
+.decor:hover .decordrop,
+.vases:hover .vasesdrop,
+.leather:hover .leatherdrop,
+.candleware:hover .candlewaredrop,
+.lighting:hover .lightingdrop,
+.furniture:hover .furnituredrop,
+.gifts:hover .giftsdrop,
+.inspiration:hover .inspirationdrop
+{
+
+  display: flex;
+
+}
+
+
+
+
+.dash{}
+
+.image{
+  height: 170px;
+  transition: all 1.5s ease-in-out;
+}
+
+.image:hover{
+  object-position: center;
+  transform: scaleX(1.1);
+}
+
+
+
+/* + and -  */
+.button {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  transition: transform 0.25s ease-out;
+}
+
+/* Vertical line */
+/* Custom styles for the plus button */
+.button {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  transition: transform 0.25s ease-out;
+}
+
+/* Vertical line */
+.button:before {
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+/* Horizontal line */
+.button:after {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: translateY(-50%);
+}
+
+/* Apply transformations when the button is active */
+.button.active:before {
+  transform: translateX(-50%) rotate(90deg);
+}
+
+
+@media (min-width:931px) {
+  .main-slide {
+    margin: 0;
+    padding: 0;
+    margin-top: -37px;
+    width: 117.2%;
+    height: 100px;
+    margin-left: -6rem;
+  
+  
+  }
+  
+  .carousal{
+    text-align: center;
+    width: 2000px;
+  }
+  
+  .carousal .slider-wrapper {
+    width: 50%;
+    display: none;
+  }
+  
+  .carousal .thumd {
+    width: 5%;
+    display: none;
+  }
+  
+}
+
+@media (max-width:930px) {
+
+  .main-slide {
+  margin: 0;
+  padding: 0;
+  margin-top: -37px;
+  width: 114.3vw;
+  height: 100% !important;
+  margin-left: -6rem;
+  
+  .carousel .thumb img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+}
+}
