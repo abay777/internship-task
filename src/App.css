@@ -117,7 +117,7 @@
     margin: 0;
     padding: 0;
     margin-top: -37px;
-    width: 107.6%;
+    width:auto;
     height: 100px;
     margin-left: -6rem;
   
@@ -126,18 +126,12 @@
   
   .carousal{
     text-align: center;
-    width: 2000px;
+    width: auto;
   }
   
-  .carousal .slider-wrapper {
-    width: 50%;
-    display: none;
-  }
   
-  .carousal .thumd {
-    width: 5%;
-    display: none;
-  }
+  
+  
   
 }
 
@@ -147,18 +141,14 @@
   margin: 0;
   padding: 0;
   margin-top: -37px;
-  width: 118vw;
-  height: 200% !important;
+  width: auto;
+  height: auto !important;
   margin-left: -6rem;
   
 
 
 }
 
-.carousel .thumb img {
-  width: 100% !important;
-  height: 100% !important;
-}
 }
 
 
@@ -169,21 +159,27 @@
   margin: 0;
   padding: 0;
   margin-top: -37px;
-  width: 125vw;
+  width:auto;
   object-position: center;
-  height: 100%!important;
+ height: 3000px;
   margin-left: -6rem;
   
 }
-.carousel .thumb img {
-  width: 100% !important;
-  height: 100% !important;
+.carousel .slide img {
+  max-height: 1000px;  /* change this to whatever you want */
+  width: auto;
 }
 
-.main-slide div img {
-  object-fit: cover;
-  object-position: center;
+.carousal {
+  width: auto;
+  height: 1000px;
 }
+
+.carousal .slide  {
+  width: auto;
+  height: 1000px;
+}
+
 }
 
 .slider-container {
@@ -197,3 +193,5 @@
   right: 0;
   
   }
+
+  
