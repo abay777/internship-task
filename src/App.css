@@ -117,7 +117,7 @@
     margin: 0;
     padding: 0;
     margin-top: -37px;
-    width: 117.2%;
+    width: 107.6%;
     height: 100px;
     margin-left: -6rem;
   
@@ -147,14 +147,53 @@
   margin: 0;
   padding: 0;
   margin-top: -37px;
-  width: 114.3vw;
-  height: 100% !important;
+  width: 118vw;
+  height: 200% !important;
   margin-left: -6rem;
   
-  .carousel .thumb img {
-    width: 100% !important;
-    height: 100% !important;
-}
+
 
 }
+
+.carousel .thumb img {
+  width: 100% !important;
+  height: 100% !important;
 }
+}
+
+
+
+@media (max-width:630px) {
+
+  .main-slide {
+  margin: 0;
+  padding: 0;
+  margin-top: -37px;
+  width: 125vw;
+  object-position: center;
+  height: 100%!important;
+  margin-left: -6rem;
+  
+}
+.carousel .thumb img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.main-slide div img {
+  object-fit: cover;
+  object-position: center;
+}
+}
+
+.slider-container {
+  width: 100%;
+  height: 100%;
+  
+  /* Add this */
+  position:absolute;
+  top:10;
+  left:0;
+  right: 0;
+  
+  }

@@ -475,14 +475,14 @@ function Navbar({color }) {
       </nav>
 
 {/* moblie navbar */}
-      <nav className={` ${color?` bg-[#c5b9ab]` : `bg-[#c5b9ab00]`} hover:bg-[#c5b9ab]  z-[1000]  fixed left-0 right-0 text-[.6rem] top-0 pt-4  flex xl:hidden flex-col `}>
+      <nav className={` ${color?` bg-[#c5b9ab]` : `bg-[#c5b9ab00]`}  z-[1000]  fixed left-0 right-0 text-[.6rem] top-0 pt-4  flex xl:hidden flex-col `}>
       <section className="flex justify-between items-center pb-3 w-full">
         <div className="ml-4">
           {
             mobmenu ? (
             <IoMdClose size={24} color={color ? '#fff' : '#393938'} onClick={()=>setMobMenu(false)} />
           ) : (
-            <RxHamburgerMenu onClick={()=>setMobMenu(true)} size={24} color={color ? '#fff' : '#393938'}/>
+            <RxHamburgerMenu onClick={()=>setMobMenu(true)} size={24} color={color ?'#393938' : '#fff'}/>
           )
           }
 
@@ -501,7 +501,7 @@ function Navbar({color }) {
         </section>
         {mobmenu ?(
            <section className="fixed bg-[#c5b9ab] top-0 left-0 right-1/2 bottom-0">
-            <IoMdClose className="block mt-3 ml-5" size={30} color="#fff" onClick={()=>setMobMenu(false)}/>
+            <IoMdClose className="block mt-3 ml-5" size={30} color={'#000'} onClick={()=>setMobMenu(false)}/>
             <section>
               <ul className="list-none p-0 m-0">
                 <li className="flex justify-between items-center p-4  border-b-[1px] border-gray-900 mb-2">
